@@ -1,0 +1,41 @@
+@import url(navbar.css);
+@import url(button.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+html, body, main{
+    height: 100%;
+    background-color: rgb(216, 225, 234);
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 5vb;
+    padding: 5vb;
+    flex-direction: column;
+    align-items: center;
+    animation: slide_div 1s;
+}
+
+p{
+    align-items:center;
+}
+
+
+
+@keyframes slide_div{
+    0%{
+        transform:translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:100
+    }
+}
